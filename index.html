@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Learners Books</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#183153;--orange:#ff6b35;--yellow:#ffd447;--blue:#2e86de;--mint:#78d6b4;--paper:#fffdf7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);overflow-x:hidden}
+.display-font{font-family:"Fraunces",serif}
+.dot-pattern{background-image:radial-gradient(rgba(24,49,83,.13) 1.3px,transparent 1.3px);background-size:18px 18px}
+.hero-orb{position:absolute;border-radius:999px;pointer-events:none}
+.hero-orb.one{width:215px;height:215px;left:-70px;top:105px;background:rgba(255,212,71,.72)}
+.hero-orb.two{width:132px;height:132px;right:5%;bottom:35px;background:rgba(120,214,180,.72)}
+.book-card{transition:transform .28s ease,box-shadow .28s ease}
+.book-card:hover{transform:translateY(-8px) rotate(-.35deg);box-shadow:0 22px 35px rgba(24,49,83,.16)}
+.soft-enter{animation:rise .7s ease both}
+.delay-1{animation-delay:.12s} .delay-2{animation-delay:.24s} .delay-3{animation-delay:.36s}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.floating-badge{animation:floatBadge 4s ease-in-out infinite}
+@keyframes floatBadge{0%,100%{transform:translateY(0) rotate(2deg)}50%{transform:translateY(-11px) rotate(-1deg)}}
+.focus-ring:focus-visible{outline:3px solid #183153;outline-offset:4px}
+.cover-img{width:100%;height:280px;object-fit:cover;display:block}
+@media(max-width:640px){.hero-orb.one{width:145px;height:145px}.hero-orb.two{width:88px;height:88px}.cover-img{height:250px}}
+</style>
+</head>
+<body class="w-full" style="background:#fffdf7">
+
+<header class="w-full bg-[#fffdf7] border-b border-[#183153]/10 relative z-20">
+<nav class="w-full max-w-7xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between gap-4">
+<a href="#top" class="flex items-center gap-3 focus-ring rounded-xl">
+<span class="w-11 h-11 rounded-2xl bg-[#ff6b35] text-white flex items-center justify-center shadow-md">
+<i data-lucide="book-open" width="23"></i></span>
+<span class="font-extrabold text-[#183153]" style="font-size:20px">Little Learners Books</span>
+</a>
+<button onclick="openWhatsApp('Hello! I would like to learn more about the kids coloring and writing books.')"
+class="focus-ring inline-flex items-center gap-2 rounded-full bg-[#183153] px-4 sm:px-5 py-3 text-white shadow-lg">
+<i data-lucide="message-circle" width="19"></i><span class="font-bold">Contact us</span>
+</button>
+</nav>
+</header>
+
+<main id="top">
+
+<section class="relative w-full overflow-hidden" style="background:linear-gradient(135deg,#fff7cf,#e5f6ff)">
+<div class="hero-orb one"></div><div class="hero-orb two"></div>
+<div class="absolute inset-0 dot-pattern opacity-60"></div>
+<div class="relative w-full max-w-7xl mx-auto px-5 sm:px-8 py-14 sm:py-20 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+
+<div class="text-center lg:text-left">
+<div class="soft-enter inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-sm border border-[#183153]/10">
+<span class="w-2.5 h-2.5 bg-[#ff6b35] rounded-full"></span>
+<span class="font-bold">Color, trace, and learn — one happy page at a time</span>
+</div>
+
+<h1 class="display-font soft-enter delay-1 mt-5 font-extrabold leading-[1.14] text-[#183153]" style="font-size:32px">
+Alphabet learning made colorful, playful, and easy
+</h1>
+
+<p class="soft-enter delay-2 mt-5 max-w-xl mx-auto lg:mx-0 text-[#36516f] leading-8" style="font-size:18px">
+Two engaging activity books that help little learners practice Arabic and English letters through coloring and guided writing.
+</p>
+
+<div class="soft-enter delay-3 mt-8 flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-3">
+<a href="#books" class="focus-ring inline-flex items-center justify-center rounded-2xl bg-[#ff6b35] px-6 py-4 text-white shadow-[0_10px_0_#cf4923] font-extrabold">
+Explore the books
+</a>
+<button onclick="openWhatsApp('Hello! I would like to order the $2 coloring and writing book.')"
+class="focus-ring inline-flex items-center justify-center gap-2 rounded-2xl bg-white border-2 border-[#183153] px-6 py-4 text-[#183153] shadow-[0_7px_0_#183153] font-extrabold">
+<i data-lucide="shopping-bag" width="20"></i> Order for $2
+</button>
+</div>
+
+<div class="mt-9 flex flex-wrap justify-center lg:justify-start gap-5 text-sm font-bold text-[#36516f]">
+<span class="flex items-center gap-2"><i data-lucide="palette" width="18"></i>Fun coloring activities</span>
+<span class="flex items-center gap-2"><i data-lucide="pen-line" width="18"></i>Easy letter tracing</span>
+</div>
+</div>
+
+<div class="soft-enter delay-2 relative max-w-xl mx-auto w-full">
+<div class="absolute -inset-4 bg-[#2e86de] rounded-[2.5rem] rotate-3 opacity-15"></div>
+<div class="relative rounded-[2rem] overflow-hidden border-[9px] border-white shadow-2xl bg-white">
+<img class="w-full h-[310px] sm:h-[430px] object-cover"
+src="https://images.unsplash.com/photo-1507842217343-583f7270bfba?w=500&h=600&fit=crop"
+alt="Arabic alphabet coloring and writing book cover">
+</div>
+<div class="floating-badge absolute -bottom-5 -right-2 sm:right-7 rounded-2xl px-4 py-3 shadow-xl border-4 border-white bg-[#ffd447] text-[#183153] font-extrabold">
+✨ Only $2 each!
+</div>
+</div>
+</div>
+</section>
+
+<section class="w-full bg-[#183153]">
+<div class="w-full max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-1 sm:grid-cols-3 gap-5 text-white">
+<div class="flex items-center justify-center sm:justify-start gap-3"><i data-lucide="badge-dollar-sign" width="25"></i><span class="font-bold">Special price: $2 instead of $4</span></div>
+<div class="flex items-center justify-center sm:justify-start gap-3 sm:border-x sm:border-white/20 sm:px-7"><i data-lucide="brush-cleaning" width="25"></i><span class="font-bold">Coloring pages kids w[...]
+<div class="flex items-center justify-center sm:justify-start gap-3"><i data-lucide="pencil-line" width="25"></i><span class="font-bold">Guided handwriting practice</span></div>
+</div>
+</section>
+
+<section id="books" class="w-full bg-[#fffdf7] py-16 sm:py-20">
+<div class="w-full max-w-6xl mx-auto px-5 sm:px-8">
+<div class="text-center max-w-2xl mx-auto">
+<p class="font-extrabold text-[#ff6b35]">Choose your alphabet adventure</p>
+<h2 class="display-font mt-3 font-extrabold text-[#183153]" style="font-size:24px">Two books. Two languages. So much learning.</h2>
+<p class="mt-4 leading-7 text-[#58708b]" style="font-size:17px">Each book combines bright coloring activities with simple writing practice to build confidence one letter at a time.</p>
+</div>
+
+<div class="mt-11 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+<article class="book-card overflow-hidden rounded-[1.75rem] bg-white border border-[#183153]/10 shadow-lg">
+<img class="cover-img" src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=500&h=350&fit=crop" alt="Arabic alphabet book">
+<div class="p-6">
+<div class="flex items-center justify-between gap-3">
+<span class="rounded-full bg-[#e4f7ef] px-3 py-1.5 font-bold text-[#187657]">Ages 3–7</span>
+<div class="text-right"><span class="block text-sm line-through text-[#58708b]">$4</span><span class="font-extrabold text-[#ff6b35]" style="font-size:18px">$2 only</span></div>
+</div>
+<h3 class="mt-4 font-extrabold text-[#183153]" style="font-size:22px">Arabic Alphabet Coloring &amp; Writing</h3>
+<p class="mt-3 text-[#58708b] leading-7">A cheerful workbook for learning Arabic letters with coloring pages, tracing lines, and simple handwriting practice.</p>
+<button onclick="openPreview('arabic')"
+class="focus-ring mt-5 w-full rounded-xl bg-[#183153] px-4 py-3 text-white font-bold">Preview &amp; Order</button>
+</div>
+</article>
+
+<article class="book-card overflow-hidden rounded-[1.75rem] bg-white border border-[#183153]/10 shadow-lg">
+<img class="cover-img" src="https://images.unsplash.com/photo-1507842217343-583f7270bfba?w=500&h=350&fit=crop" alt="English alphabet book">
+<div class="p-6">
+<div class="flex items-center justify-between gap-3">
+<span class="rounded-full bg-[#e3f1ff] px-3 py-1.5 font-bold text-[#1765a5]">Ages 3–7</span>
+<div class="text-right"><span class="block text-sm line-through text-[#58708b]">$4</span><span class="font-extrabold text-[#ff6b35]" style="font-size:18px">$2 only</span></div>
+</div>
+<h3 class="mt-4 font-extrabold text-[#183153]" style="font-size:22px">English Alphabet Coloring &amp; Writing</h3>
+<p class="mt-3 text-[#58708b] leading-7">A fun ABC workbook filled with coloring, letter tracing, and early writing activities for young learners.</p>
+<button onclick="openPreview('english')"
+class="focus-ring mt-5 w-full rounded-xl bg-[#183153] px-4 py-3 text-white font-bold">Preview &amp; Order</button>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="w-full bg-white py-16 sm:py-20">
+<div class="w-full max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-11 items-center">
+<div class="relative">
+<div class="absolute -inset-3 bg-[#ffd447] rounded-[2rem] -rotate-2"></div>
+<img class="relative w-full h-[330px] sm:h-[400px] object-cover rounded-[1.7rem] shadow-xl"
+src="https://images.unsplash.com/photo-1503454537688-e6694d216be0?w=600&h=450&fit=crop"
+alt="Children learning with colorful books">
+</div>
+<div>
+<p class="font-extrabold text-[#ff6b35]">Learning time together</p>
+<h2 class="display-font mt-3 font-extrabold text-[#183153]" style="font-size:24px">A small book for brighter everyday moments</h2>
+<p class="mt-5 leading-8 text-[#42607f]" style="font-size:18px">Coloring and writing activities create a relaxed way for children to discover letters while spending meaningful time with a parent.</p>
+<ul class="mt-7 space-y-4">
+<li class="flex items-start gap-3"><span class="mt-0.5 w-7 h-7 flex-none rounded-full bg-[#78d6b4] flex items-center justify-center"><i data-lucide="check" width="17"></i></span><span class="font-bold[...]
+<li class="flex items-start gap-3"><span class="mt-0.5 w-7 h-7 flex-none rounded-full bg-[#78d6b4] flex items-center justify-center"><i data-lucide="check" width="17"></i></span><span class="font-bold[...]
+<li class="flex items-start gap-3"><span class="mt-0.5 w-7 h-7 flex-none rounded-full bg-[#78d6b4] flex items-center justify-center"><i data-lucide="check" width="17"></i></span><span class="font-bold[...]
+</ul>
+</div>
+</div>
+</section>
+
+<section class="py-16 sm:py-20" style="background:linear-gradient(135deg,#fff7cf,#e5f6ff)">
+<div class="max-w-3xl mx-auto px-5 text-center">
+<p class="font-extrabold text-[#ff6b35]">Simple ordering</p>
+<h2 class="display-font mt-3 font-extrabold text-[#183153]" style="font-size:28px">Get your book in a few easy steps</h2>
+<div class="mt-9 grid gap-5 text-left">
+<div class="bg-white rounded-2xl p-5 shadow-sm border border-[#183153]/10"><b>1. Choose your book</b><p class="mt-1 text-[#58708b]">Select the Arabic or English book above.</p></div>
+<div class="bg-white rounded-2xl p-5 shadow-sm border border-[#183153]/10"><b>2. Pay $2 using USDT TRON (TRC-20)</b><p class="mt-1 text-[#58708b] break-all">Payment address: <strong>TRfEmcRMqK51Aedpux[...]
+<div class="bg-white rounded-2xl p-5 shadow-sm border border-[#183153]/10"><b>3. Send your payment proof on WhatsApp</b><p class="mt-1 text-[#58708b]">After confirming your payment, the PDF book will [...]
+</div>
+<button onclick="openWhatsApp('Hello! I want to order a kids coloring and tracing book for $2. I have paid using USDT TRON.')"
+class="mt-8 inline-flex items-center justify-center gap-3 rounded-2xl bg-[#25D366] px-7 py-4 text-white font-extrabold shadow-lg hover:scale-[1.02] transition">
+<i data-lucide="message-circle" width="24"></i> Order via WhatsApp
+</button>
+</div>
+</section>
+
+<section class="bg-[#183153] text-white py-12">
+<div class="max-w-5xl mx-auto px-5 text-center">
+<h2 class="display-font font-extrabold" style="font-size:27px">Ready to make learning fun?</h2>
+<p class="mt-3 text-white/80">Choose a book and contact us on WhatsApp.</p>
+<button onclick="openWhatsApp('Hello! I would like to order a kids coloring and writing book.')"
+class="mt-6 inline-flex items-center gap-3 rounded-2xl bg-[#ff6b35] px-7 py-4 font-extrabold shadow-lg">
+<i data-lucide="message-circle" width="22"></i> Contact us on WhatsApp
+</button>
+<p class="mt-5 text-sm text-white/70">WhatsApp: +972 59 965 1741</p>
+</div>
+</section>
+
+<footer class="bg-[#fffdf7] py-7 text-center text-[#58708b] text-sm">
+© 2026 Little Learners Books. Educational digital books for little learners.
+</footer>
+
+</main>
+<div id="previewModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4" style="background:rgba(24,49,83,.82);backdrop-filter:blur(4px)">
+  <div class="relative w-full max-w-5xl max-h-[94vh] overflow-y-auto rounded-[2rem] bg-[#fffdf7] p-5 sm:p-7 shadow-2xl">
+    <button onclick="closePreview()" class="absolute right-4 top-4 z-10 w-11 h-11 rounded-full bg-[#183153] text-white text-2xl font-bold">&times;</button>
+    <div class="text-center pr-10">
+      <p class="font-extrabold text-[#ff6b35]">Take a peek inside 📖</p>
+      <h2 id="previewTitle" class="display-font mt-2 text-2xl sm:text-3xl font-extrabold text-[#183153]">Book Preview</h2>
+      <p class="mt-2 text-[#58708b]">Here are a few sample pages. The complete PDF is available after purchase.</p>
+    </div>
+    <div id="previewPages" class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-5"></div>
+    <div class="mt-7 rounded-2xl bg-[#fff7cf] p-5 text-center">
+      <p class="font-extrabold text-[#183153] text-lg">Like what you see?</p>
+      <p class="mt-1 text-[#58708b]">Get the complete book for just <strong>$2</strong>.</p>
+      <button id="previewOrderButton" class="mt-4 inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-7 py-4 text-white font-extrabold shadow-lg">
+        💬 Order via WhatsApp
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+
+const PREVIEW_IMAGES = {
+  arabic: [
+    'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&h=500&fit=crop',
+    'https://images.unsplash.com/photo-1507846356193-851975e24ae9?w=400&h=500&fit=crop',
+    'https://images.unsplash.com/photo-1503454537688-e6694d216be0?w=400&h=500&fit=crop'
+  ],
+  english: [
+    'https://images.unsplash.com/photo-1507842217343-583f7270bfba?w=400&h=500&fit=crop',
+    'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&h=500&fit=crop',
+    'https://images.unsplash.com/photo-1503454537688-e6694d216be0?w=400&h=500&fit=crop'
+  ]
+};
+
+function openWhatsApp(message) {
+  const phoneNumber = '972599651741';
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  window.open(whatsappURL, '_blank');
+}
+
+function openPreview(bookType) {
+  const modal = document.getElementById('previewModal');
+  const previewPages = document.getElementById('previewPages');
+  const previewTitle = document.getElementById('previewTitle');
+  const previewOrderButton = document.getElementById('previewOrderButton');
+  
+  const bookTitles = {
+    arabic: 'Arabic Alphabet Coloring & Writing',
+    english: 'English Alphabet Coloring & Writing'
+  };
+  
+  const orderMessages = {
+    arabic: 'Hello! I would like to order the Arabic Alphabet Coloring & Writing book for $2.',
+    english: 'Hello! I would like to order the English Alphabet Coloring & Writing book for $2.'
+  };
+  
+  previewTitle.textContent = bookTitles[bookType];
+  previewPages.innerHTML = PREVIEW_IMAGES[bookType]
+    .map(img => `<img src="${img}" alt="Preview page" class="w-full rounded-lg shadow-md">`)
+    .join('');
+  
+  previewOrderButton.onclick = () => openWhatsApp(orderMessages[bookType]);
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+}
+
+function closePreview() {
+  const modal = document.getElementById('previewModal');
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  lucide.createIcons();
+});
+
+</script>
+</body>
+</html>
